@@ -210,7 +210,9 @@ passed
 --- response_body
 failed to sign jwt
 --- error_code: 503
---- error_log
+--- error_log eval
+qr/failed to sign jwt, err: secret could not found in vault/
+--- grep_error_log_out
 failed to sign jwt, err: secret could not found in vault
 
 
